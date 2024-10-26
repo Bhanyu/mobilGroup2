@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Customers' information</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Ali Veliyev</th>
+                    <th>0501234567</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Banu Whoseynova</th>
+                    <th>0701234568</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Add new customer</h2>
+
+        <form id="customerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="0504325676" required>
+
+            <button type="submit">Add</button>
+        </form>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
